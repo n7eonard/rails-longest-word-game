@@ -1,0 +1,21 @@
+<body>
+<container class="text-center">
+  <h1><strong>NEW GAME</strong></h1>
+
+  <ul class="list-inline">
+    <% @letters.each do |letter| %>
+      <li type="button" class="btn btn-primary letter-button"><%= letter %></li>
+    <% end %>
+
+
+  </ul>
+
+  <form class="form-inline">
+    <div class="form-group">
+      <p>What is the longest word you can find ?</p>
+      <input type="text" id="inputWord" value="">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</container>
+</body>
